@@ -25,6 +25,16 @@ export default new Router({
         path: '/test',
         name: 'test',
         component : () => import('./views/Test.vue')
+      },
+      {
+        path: '/project',
+        name: 'project',
+        component : () => import('./views/Projects.vue')
+      },
+      {
+        path: '/jobshopper',
+        name: 'jobshopper',
+        component: () => import('./views/Jobshopper.vue')
       }
   ]
 })
