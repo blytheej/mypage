@@ -6,9 +6,9 @@
       <router-link to="/test">Test</router-link> |
       <router-link to="/jobshopper">Jobshopper</router-link> |
       <router-link to="/project">Project</router-link>
+    </div>
       <router-view></router-view>
 
-    </div>
   </div>
 </template>
 
