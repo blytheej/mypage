@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/test">Test</router-link> |
-      <router-link to="/jobshopper">Jobshopper</router-link> |
-      <router-link to="/project">Project</router-link>
-    </div>
-      <router-view></router-view>
-
+    <ul id="nav">
+      <li><router-link  to="/">Me</router-link></li>
+      <li><router-link  to="/test">Test</router-link></li>
+      <li><router-link  to="/jobshopper">Jobshopper</router-link> </li>
+      <li><router-link  to="/project">Projects</router-link></li>
+    </ul>
+    <router-view/>
   </div>
 </template>
 
@@ -21,4 +19,25 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+  #nav{
+    list-style: none;
+  }
+  #nav li{
+    display: inline-block;
+    padding :20px;
+  }
+  #nav li a{
+    text-decoration: none;
+    color:white;
+    font-size : 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+  }
+
+.router{
+
+}
+
 </style>
